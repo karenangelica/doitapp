@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ECF0F3</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#9DA6B4</color>
+    <color name="default_black">#9DA6B4</color>
+    <color name="cb_checked_color">#D0D5DC</color>
+</resources>
