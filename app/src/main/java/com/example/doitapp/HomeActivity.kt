@@ -44,9 +44,8 @@ class HomeActivity : AppCompatActivity(), TaskTitleAdapter.RecyclerViewClickList
     }
 
     override fun onResume() {
-        presenter.onGetListOfTaskTitle()
-        updateAdapter(taskTitleList)
         super.onResume()
+        adapter.notifyDataSetChanged()
     }
 
     private fun setupFabListener() {
