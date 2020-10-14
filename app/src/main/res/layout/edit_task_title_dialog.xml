@@ -18,7 +18,7 @@
             android:layout_centerHorizontal="true"
             android:textSize="20sp"
             android:background="@drawable/border"
-            android:text="New Task"
+            android:text="Edit Title"
             android:padding="10dp"/>
 
         <EditText
@@ -38,11 +38,20 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true">
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/saveTaskBtn"
+                android:id="@+id/saveUpdatedTaskBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorAccent"
                 android:text="Save" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/delTaskBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/saveUpdatedTaskBtn"
+                android:layout_marginLeft="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorAccent"
+                android:text="Delete" />
         </RelativeLayout>
 
     </RelativeLayout>

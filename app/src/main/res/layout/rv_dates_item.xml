@@ -3,21 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
-\
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cdTaskContainer"
         android:layout_centerHorizontal="true"
-        app:cardBackgroundColor="@color/colorPrimary"
-        android:layout_width="350dp"
+        app:cardBackgroundColor="#E4EAEE"
+        android:layout_width="330dp"
         android:layout_height="60dp"
         app:cardCornerRadius="6dp"
         android:longClickable="true"
         android:clickable="true"
-        app:cardElevation="4dp"
-        android:outlineAmbientShadowColor="#D0DCF1"
-
-        android:layout_marginTop="6dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="6dp"
         >
 
@@ -29,7 +25,7 @@
 
             <TextView
                 android:id="@+id/taskParentName"
-                android:layout_width="290dp"
+                android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:text="Academic Assignments"

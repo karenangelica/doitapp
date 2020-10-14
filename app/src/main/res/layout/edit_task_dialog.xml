@@ -9,32 +9,50 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginBottom="16dp">
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:background="@drawable/border"
+            android:text="Edit Task"
+            android:padding="10dp"/>
 
         <EditText
             android:id="@+id/newTaskET"
             android:text=""
-            android:layout_width="150dp"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_below="@id/dialogTitle"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:layout_centerHorizontal="true"
             />
 
-        <Button
+        <RelativeLayout
+            android:layout_below="@id/newTaskET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/saveUpdatedTaskBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/newTaskET"
-            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorAccent"
             android:text="Save" />
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/delTaskBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/saveUpdatedTaskBtn"
-            android:layout_below="@id/newTaskET"
             android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"
             android:text="Delete" />
+    </RelativeLayout>
 
     </RelativeLayout>
 

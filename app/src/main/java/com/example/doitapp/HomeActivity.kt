@@ -43,6 +43,12 @@ class HomeActivity : AppCompatActivity(), TaskTitleAdapter.RecyclerViewClickList
         setupFabListener()
     }
 
+    override fun onResume() {
+        presenter.onGetListOfTaskTitle()
+        updateAdapter(taskTitleList)
+        super.onResume()
+    }
+
     private fun setupFabListener() {
 
         binding.addTaskTitleFloatBtn.setOnClickListener {
@@ -88,7 +94,7 @@ class HomeActivity : AppCompatActivity(), TaskTitleAdapter.RecyclerViewClickList
     override fun onLongClick(id: Int, taskTitle: String) {
 
         val view: View =
-            layoutInflater.inflate(R.layout.edit_task_dialog, findViewById(R.id.content), false)
+            layoutInflater.inflate(R.layout.edit_task_title_dialog, findViewById(R.id.content), false)
         val dialog = MaterialAlertDialogBuilder(this).setView(view).setCancelable(true).create()
         view.findViewById<EditText>(R.id.newTaskET).setText(taskTitle)
         dialog.show()

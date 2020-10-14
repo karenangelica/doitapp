@@ -3,11 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="?android:attr/actionBarSize"
-    android:elevation="30dp"
-    android:outlineAmbientShadowColor="#000000"
-    android:outlineSpotShadowColor="#D0DCF1"
+    android:elevation="3dp"
     app:theme="@style/CustomAppBarTheme"
-
     >
 
 
